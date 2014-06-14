@@ -1,6 +1,12 @@
 set nocompatible ruler laststatus=2 showcmd showmode number
-set incsearch ignorecase smartcase hlsearch
+set incsearch ignorecase smartcase hlsearch nowrap
 syntax on
+
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+
+set colorcolumn=100
 
 " http://stackoverflow.com/a/15317146
 set backupdir=~/.vim/backup//
@@ -10,6 +16,7 @@ set undodir=~/.vim/undo//
 " http://stackoverflow.com/a/5019111
 set tags=tags;/
 
+" ----- Vundle setup -----
 filetype off
 
 " set the runtime path to include Vundle and initialize
