@@ -16,6 +16,15 @@ set undodir=~/.vim/undo//
 " http://stackoverflow.com/a/5019111
 set tags=tags;/
 
+" Automatically remote trailing whitespaces on save
+
+autocmd FileType python autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+" key mappings
+
+map <Leader>r :CtrlPBufTag<CR>
+map <Leader>R :CtrlPTag<CR>
+
 " ----- Vundle setup -----
 filetype off
 
