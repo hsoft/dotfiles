@@ -20,6 +20,10 @@ set tags=tags;/
 
 autocmd FileType python autocmd BufWritePre <buffer> :%s/\s\+$//e
 
+" File ignores
+
+set wildignore+=*.pyc
+
 " key mappings
 
 map <Leader>r :CtrlPBufTag<CR>
