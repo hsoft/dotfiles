@@ -9,6 +9,9 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+exec "xset -b"
+exec "xmodmap $HOME/.xmodmaprc"
+
 set $mod Mod1
 
 bindsym $mod+asciitilde exec "setxkbmap -layout 'ca(fr-legacy)' ; killall -USR1 i3status"
