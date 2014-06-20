@@ -29,6 +29,10 @@ set wildignore+=*.pyc
 map <Leader>r :CtrlPBufTag<CR>
 map <Leader>R :CtrlPTag<CR>
 
+" Syntax stuff
+
+let g:syntastic_python_checkers = ['python', 'pyflakes']
+
 " ----- Vundle setup -----
 filetype off
 
@@ -42,6 +46,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'preview'
 Plugin 'ctrlp.vim'
+Plugin 'Syntastic'
 
 call vundle#end()
 filetype plugin indent on

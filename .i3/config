@@ -14,11 +14,12 @@
 #---------------
 
 exec "i3-msg 'workspace z'"
+exec "xset -b"
+exec "xmodmap $HOME/.xmodmaprc"
 
 #---------------
 # Config
 #---------------
-
 
 set $mod Mod1
 
