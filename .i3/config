@@ -22,6 +22,7 @@ exec "xmodmap $HOME/.xmodmaprc"
 #---------------
 
 set $mod Mod1
+focus_follows_mouse no
 
 bindsym $mod+asciitilde exec "setxkbmap -layout 'ca(fr-legacy)' ; killall -USR1 i3status"
 bindsym $mod+degree exec "setxkbmap -layout us ; killall -USR1 i3status"
