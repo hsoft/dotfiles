@@ -14,6 +14,7 @@ Plugin 'ctrlp.vim'
 Plugin 'Tagbar'
 Plugin 'Syntastic'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'surround.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -28,6 +29,7 @@ colorscheme solarized
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+set tabstop=4
 
 set colorcolumn=100
 
