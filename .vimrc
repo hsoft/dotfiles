@@ -15,6 +15,7 @@ Plugin 'Tagbar'
 Plugin 'Syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'surround.vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -43,7 +44,7 @@ set tags=tags;/
 
 " Automatically remote trailing whitespaces on save
 
-autocmd FileType python autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType python,html autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " File ignores
 
@@ -54,6 +55,7 @@ set wildignore+=*.pyc
 map <Leader>r :CtrlPBufTag<CR>
 map <Leader>R :CtrlPTag<CR>
 map <F8> :TagbarToggle<CR>
+map <F9> :NERDTreeToggle<CR>
 
 " Syntax stuff
 
