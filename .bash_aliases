@@ -10,3 +10,7 @@ alias docker-iclean="sudo docker images -q --filter 'dangling=true' | xargs sudo
 vimp() {
     vim -c ":source $1"
 }
+
+dockterm() {
+    sudo docker run -t -i $1 /bin/bash
+}
