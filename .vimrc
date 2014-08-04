@@ -49,6 +49,7 @@ autocmd FileType python,html autocmd BufWritePre <buffer> :%s/\s\+$//e
 " File ignores
 
 set wildignore+=*.pyc
+let NERDTreeRespectWildIgnore=1
 
 " key mappings
 
