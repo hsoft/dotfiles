@@ -16,6 +16,8 @@ Plugin 'Syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'surround.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'groenewege/vim-less'
 
 call vundle#end()
 filetype plugin indent on
