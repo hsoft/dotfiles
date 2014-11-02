@@ -50,7 +50,7 @@ autocmd FileType python,html autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " File ignores
 
-set wildignore+=*.pyc
+set wildignore+=*.pyc,__pycache__
 let NERDTreeRespectWildIgnore=1
 
 " key mappings
@@ -59,6 +59,10 @@ map <Leader>r :CtrlPBufTag<CR>
 map <Leader>R :CtrlPTag<CR>
 map <F8> :TagbarToggle<CR>
 map <F9> :NERDTreeToggle<CR>
+map <C-W>o :tabnew<CR>
+map <C-W>i :tabclose<CR>
+map <C-W>u :tabprevious<CR>
+map <C-W>p :tabnext<CR>
 
 " Syntax stuff
 
