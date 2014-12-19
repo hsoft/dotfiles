@@ -46,7 +46,7 @@ set tags=tags;/
 
 " Automatically remote trailing whitespaces on save
 
-autocmd FileType python,html,rs autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType python,html,htmldjango,php,javascript,rs autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " File ignores
 
