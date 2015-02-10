@@ -5,7 +5,7 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+    PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 fi
 
 export PATH="$PATH:$HOME/.gem/ruby/2.0.0/bin"

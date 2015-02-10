@@ -33,6 +33,7 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
+let NERDSpaceDelims=1
 
 set colorcolumn=100
 
