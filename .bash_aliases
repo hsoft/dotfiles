@@ -3,7 +3,7 @@ alias vi=vim
 alias nwfix="sudo systemctl restart dhcpcd"
 alias upchk="sudo emerge --sync && sudo layman -S && emerge -pvNuD @world"
 alias sflvpn="sudo openvpn --config /etc/openvpn/client.conf"
-alias docker-cclean="docker ps -q -a | xargs docker rm"
+alias docker-cclean="docker ps -q -a | xargs docker rm -v"
 alias docker-iclean="docker images -q --filter 'dangling=true' | xargs docker rmi"
 
 vimp() {
