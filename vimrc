@@ -6,6 +6,12 @@ set relativenumber
 set t_Co=256
 syntax enable
 set background=dark
+" no delay on ESC
+set esckeys
+" allow buffer to go hidden without being saved
+" this is to avoid annoying window-popping when opening a buffer while having
+" forgot to save the current one
+set hidden
 
 set expandtab
 set shiftwidth=4
@@ -45,6 +51,11 @@ map <Leader>r :CtrlPBufTag<CR>
 map <Leader>R :CtrlPTag<CR>
 map <Leader>p :CtrlP<CR>
 map <F9> :Explore<CR>
+
+" dev-related mappings
+nmap <C-b>b :!make<CR>
+nmap <C-b>B :!make<Space>
+nmap <C-b>t :!make test<CR>
 
 " Syntax stuff
 
