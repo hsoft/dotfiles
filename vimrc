@@ -20,7 +20,6 @@ set tabstop=4
 set softtabstop=-1
 
 set colorcolumn=80
-set tw=80
 
 " http://stackoverflow.com/a/15317146
 set backupdir=~/.vim/backup//
@@ -35,6 +34,7 @@ set tags=tags;/
 autocmd FileType c,python,html,htmldjango,php,javascript,rs,css,scss autocmd BufWritePre <buffer> :%s/\s\+$//e
 " http://stackoverflow.com/a/18671756
 autocmd FileType yaml setlocal sw=2 ts=2 nosmartindent nocindent indentexpr<
+autocmd FileType text setlocal tw=80
 
 " File ignores
 
