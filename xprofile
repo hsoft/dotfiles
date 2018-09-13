@@ -1,0 +1,4 @@
+#!/bin/sh
+
+setxkbmap -layout us,ca\(fr-legacy\) -option "grp:alt_shift_toggle"
+eval $(gpg-agent --daemon --enable-ssh-support)
